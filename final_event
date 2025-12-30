@@ -3018,5 +3018,1514 @@
       "conservationists",
       "government"
     ]
+  },[
+  {
+    id: "21",
+    eventType: "Random Event",
+    location: "ภูเขา",
+    title: "ปัญหาแนวเขตป่าสงวน",
+    description: "เจ้าหน้าที่กรมป่าไม้พบว่าเส้นทางตัดถนนคาบเกี่ยวกับเขตพื้นที่ป่าสงวนโดยไม่ได้รับอนุญาต",
+    options: [
+      {
+        label: "ยื่นขออนุญาตตามระเบียบราชการ",
+        type: "OFFICIAL",
+        costMoney: 200,
+        costResources: 0,
+        costMorale: 5,
+        successRate: 0.8,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 5,
+          factions: {
+            villagers: 0,
+            politicians: 1,
+            government: 3,
+            companies: 0,
+            conservationists: 1
+          },
+          message: "การดำเนินการถูกต้องตามกฎหมายทำให้โครงการได้รับความเชื่อมั่น"
+        },
+        failOutcome: {
+          money: -100,
+          resources: -50,
+          morale: -10,
+          factions: {
+            villagers: 0,
+            politicians: -1,
+            government: -1,
+            companies: -1,
+            conservationists: -1
+          },
+          message: "เอกสารล่าช้าทำให้การก่อสร้างหยุดชะงัก"
+        }
+      },
+      {
+        label: "เจรจาขยับแนวถนนกับกลุ่มอนุรักษ์",
+        type: "DIPLOMATIC",
+        costMoney: 150,
+        costResources: 50,
+        costMorale: 0,
+        successRate: 0.7,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 15,
+          factions: {
+            villagers: 1,
+            politicians: 0,
+            government: 0,
+            companies: 0,
+            conservationists: 3
+          },
+          message: "กลุ่มอนุรักษ์พอใจที่คุณใส่ใจระบบนิเวศ"
+        },
+        failOutcome: {
+          money: -50,
+          resources: -100,
+          morale: -5,
+          factions: {
+            villagers: -1,
+            politicians: 0,
+            government: 0,
+            companies: 0,
+            conservationists: -2
+          },
+          message: "การเจรจาล้มเหลวและทำให้แผนผังถนนสับสน"
+        }
+      },
+      {
+        label: "จ่ายเงินใต้โต๊ะเพื่อแก้ไขแผนที่",
+        type: "UNDERGROUND",
+        costMoney: 400,
+        costResources: 0,
+        costMorale: 15,
+        successRate: 0.6,
+        successOutcome: {
+          money: 0,
+          resources: 100,
+          morale: -10,
+          factions: {
+            villagers: -1,
+            politicians: 2,
+            government: 1,
+            companies: 2,
+            conservationists: -2
+          },
+          message: "ปัญหาถูกปิดเงียบและงานเดินหน้าต่อทันที"
+        },
+        failOutcome: {
+          money: -500,
+          resources: 0,
+          morale: -25,
+          factions: {
+            villagers: -2,
+            politicians: -3,
+            government: -3,
+            companies: -2,
+            conservationists: -1
+          },
+          message: "ความลับรั่วไหลจนกลายเป็นคดีความใหญ่โต"
+        }
+      },
+      {
+        label: "สั่งไถป่าต่อไปโดยไม่สนใจคำเตือน",
+        type: "AGGRESSIVE",
+        costMoney: 0,
+        costResources: 200,
+        costMorale: 20,
+        successRate: 0.5,
+        successOutcome: {
+          money: 200,
+          resources: 300,
+          morale: -20,
+          factions: {
+            villagers: -1,
+            politicians: 0,
+            government: -2,
+            companies: 1,
+            conservationists: -3
+          },
+          message: "พื้นที่ถูกเคลียร์อย่างรวดเร็วแต่เสียชื่อเสียงมาก"
+        },
+        failOutcome: {
+          money: -300,
+          resources: -200,
+          morale: -30,
+          factions: {
+            villagers: -2,
+            politicians: -2,
+            government: -3,
+            companies: -1,
+            conservationists: -3
+          },
+          message: "ถูกสั่งระงับงานและโดนปรับมหาศาล"
+        }
+      }
+    ],
+    isIntroduction: false,
+    involvedCharNames: [],
+    involvedFactions: [
+      "government",
+      "conservationists"
+    ]
+  },
+  {
+    id: "22",
+    eventType: "Random Event",
+    location: "ภูเขา",
+    title: "การประท้วงเรื่องฝุ่นละออง",
+    description: "ชาวบ้านรวมตัวกันปิดถนนประท้วงเรื่องฝุ่นจากการก่อสร้างที่พัดเข้าสู่หมู่บ้านบนดอย",
+    options: [
+      {
+        label: "จัดระเบียบเวลาเข้างานและติดตั้งสเปรย์น้ำ",
+        type: "OFFICIAL",
+        costMoney: 150,
+        costResources: 100,
+        costMorale: 0,
+        successRate: 0.9,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 10,
+          factions: {
+            villagers: 2,
+            politicians: 1,
+            government: 2,
+            companies: 0,
+            conservationists: 1
+          },
+          message: "มาตรการได้รับคำชมจากหน่วยงานรัฐ"
+        },
+        failOutcome: {
+          money: -100,
+          resources: -50,
+          morale: -5,
+          factions: {
+            villagers: 0,
+            politicians: 0,
+            government: -1,
+            companies: -1,
+            conservationists: 0
+          },
+          message: "อุปกรณ์ไม่เพียงพอและยังแก้ปัญหาไม่ได้"
+        }
+      },
+      {
+        label: "เข้าพบผู้นำชุมชนเพื่อมอบเงินชดเชย",
+        type: "DIPLOMATIC",
+        costMoney: 300,
+        costResources: 0,
+        costMorale: 5,
+        successRate: 0.8,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 20,
+          factions: {
+            villagers: 3,
+            politicians: 1,
+            government: 0,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "ชาวบ้านยอมสลายตัวหลังได้รับความช่วยเหลือ"
+        },
+        failOutcome: {
+          money: -200,
+          resources: 0,
+          morale: -10,
+          factions: {
+            villagers: -2,
+            politicians: 0,
+            government: 0,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "ชาวบ้านมองว่าเป็นเงินปิดปากที่ไม่เป็นธรรม"
+        }
+      },
+      {
+        label: "ใช้เส้นสายนักการเมืองกดดันแกนนำ",
+        type: "UNDERGROUND",
+        costMoney: 100,
+        costResources: 0,
+        costMorale: 20,
+        successRate: 0.7,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: -15,
+          factions: {
+            villagers: -2,
+            politicians: 2,
+            government: 0,
+            companies: 1,
+            conservationists: 0
+          },
+          message: "การประท้วงยุติลงอย่างรวดเร็วด้วยอำนาจมืด"
+        },
+        failOutcome: {
+          money: -150,
+          resources: 0,
+          morale: -25,
+          factions: {
+            villagers: -3,
+            politicians: -1,
+            government: 0,
+            companies: 0,
+            conservationists: -1
+          },
+          message: "เกิดความขัดแย้งรุนแรงและเป็นข่าวเสียหาย"
+        }
+      },
+      {
+        label: "ใช้เครื่องจักรทำงานหนักขึ้นเพื่อรีบจบงาน",
+        type: "AGGRESSIVE",
+        costMoney: 0,
+        costResources: 200,
+        costMorale: 25,
+        successRate: 0.4,
+        successOutcome: {
+          money: 300,
+          resources: 0,
+          morale: -20,
+          factions: {
+            villagers: -3,
+            politicians: 0,
+            government: -1,
+            companies: 2,
+            conservationists: -1
+          },
+          message: "งานคืบหน้าเร็วมากแต่ชาวบ้านโกรธแค้น"
+        },
+        failOutcome: {
+          money: -100,
+          resources: -200,
+          morale: -30,
+          factions: {
+            villagers: -3,
+            politicians: -2,
+            government: -2,
+            companies: -1,
+            conservationists: -2
+          },
+          message: "ชาวบ้านบุกทำลายเครื่องจักรในพื้นที่ก่อสร้าง"
+        }
+      }
+    ],
+    isIntroduction: false,
+    involvedCharNames: [],
+    involvedFactions: [
+      "villagers",
+      "politicians"
+    ]
+  },
+  {
+    id: "23",
+    eventType: "Random Event",
+    location: "ภูเขา",
+    title: "หน้าดินสไลด์ปิดทับเครื่องจักร",
+    description: "หลังฝนตกหนักหน้าดินบนเขาเกิดพังทลายลงมาทับอุปกรณ์หลักเสียหายและขวางทางเดินรถ",
+    options: [
+      {
+        label: "ขอความช่วยเหลือจากหน่วยบรรเทาสาธารณภัย",
+        type: "OFFICIAL",
+        costMoney: 100,
+        costResources: 50,
+        costMorale: 5,
+        successRate: 0.85,
+        successOutcome: {
+          money: 0,
+          resources: 100,
+          morale: 10,
+          factions: {
+            villagers: 1,
+            politicians: 0,
+            government: 3,
+            companies: 0,
+            conservationists: 1
+          },
+          message: "หน่วยงานรัฐเข้ามาจัดการอย่างมืออาชีพ"
+        },
+        failOutcome: {
+          money: -200,
+          resources: -100,
+          morale: -10,
+          factions: {
+            villagers: -1,
+            politicians: -1,
+            government: -1,
+            companies: -1,
+            conservationists: 0
+          },
+          message: "ความล่าช้าของรัฐทำให้เครื่องจักรเสียหายถาวร"
+        }
+      },
+      {
+        label: "จ้างแรงงานชาวบ้านมาช่วยขุดลอก",
+        type: "DIPLOMATIC",
+        costMoney: 250,
+        costResources: 0,
+        costMorale: 0,
+        successRate: 0.75,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 25,
+          factions: {
+            villagers: 3,
+            politicians: 1,
+            government: 0,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "สร้างรายได้ให้ชุมชนและกู้หน้าดินสำเร็จ"
+        },
+        failOutcome: {
+          money: -200,
+          resources: -50,
+          morale: -15,
+          factions: {
+            villagers: -1,
+            politicians: 0,
+            government: 0,
+            companies: -1,
+            conservationists: -1
+          },
+          message: "เกิดอุบัติเหตุกับแรงงานชาวบ้านขณะทำงาน"
+        }
+      },
+      {
+        label: "เคลมประกันด้วยข้อมูลที่บิดเบือนเล็กน้อย",
+        type: "UNDERGROUND",
+        costMoney: 50,
+        costResources: 0,
+        costMorale: 15,
+        successRate: 0.6,
+        successOutcome: {
+          money: 400,
+          resources: 0,
+          morale: -5,
+          factions: {
+            villagers: 0,
+            politicians: 0,
+            government: -1,
+            companies: 3,
+            conservationists: 0
+          },
+          message: "ได้เงินชดเชยมาซ่อมแซมอย่างรวดเร็ว"
+        },
+        failOutcome: {
+          money: -400,
+          resources: -100,
+          morale: -20,
+          factions: {
+            villagers: 0,
+            politicians: -1,
+            government: -2,
+            companies: -2,
+            conservationists: 0
+          },
+          message: "บริษัทประกันตรวจสอบพบความผิดปกติและฟ้องร้อง"
+        }
+      },
+      {
+        label: "บังคับคนงานทำงานท่ามกลางพายุ",
+        type: "AGGRESSIVE",
+        costMoney: 0,
+        costResources: 200,
+        costMorale: 30,
+        successRate: 0.5,
+        successOutcome: {
+          money: 100,
+          resources: 0,
+          morale: -25,
+          factions: {
+            villagers: -2,
+            politicians: 0,
+            government: -2,
+            companies: 2,
+            conservationists: 0
+          },
+          message: "เคลียร์ทางเสร็จทันเวลาแต่คนงานบาดเจ็บ"
+        },
+        failOutcome: {
+          money: -300,
+          resources: -300,
+          morale: -30,
+          factions: {
+            villagers: -3,
+            politicians: -2,
+            government: -3,
+            companies: -2,
+            conservationists: -1
+          },
+          message: "เกิดอุบัติเหตุร้ายแรงจนงานต้องถูกสั่งหยุด"
+        }
+      }
+    ],
+    isIntroduction: false,
+    involvedCharNames: [],
+    involvedFactions: [
+      "government",
+      "villagers"
+    ]
+  },
+  {
+    id: "24",
+    eventType: "Random Event",
+    location: "ภูเขา",
+    title: "เงินสนับสนุนจากนักการเมือง",
+    description: "นักการเมืองท้องถิ่นเสนอเงินงบประมาณพิเศษแลกกับการให้บริษัทของญาติเข้ามารับงานช่วงต่อ",
+    options: [
+      {
+        label: "ทำสัญญาจ้างตามระเบียบพัสดุ",
+        type: "OFFICIAL",
+        costMoney: 200,
+        costResources: 0,
+        costMorale: 0,
+        successRate: 0.8,
+        successOutcome: {
+          money: 300,
+          resources: 100,
+          morale: 5,
+          factions: {
+            villagers: 0,
+            politicians: 2,
+            government: 2,
+            companies: 1,
+            conservationists: 0
+          },
+          message: "ได้งบเพิ่มและจัดการได้อย่างโปร่งใส"
+        },
+        failOutcome: {
+          money: -100,
+          resources: 0,
+          morale: -5,
+          factions: {
+            villagers: 0,
+            politicians: -1,
+            government: -1,
+            companies: -1,
+            conservationists: 0
+          },
+          message: "ขั้นตอนที่ยุ่งยากทำให้นักการเมืองเปลี่ยนใจ"
+        }
+      },
+      {
+        label: "จัดงานเลี้ยงกระชับความสัมพันธ์กับชุมชน",
+        type: "DIPLOMATIC",
+        costMoney: 150,
+        costResources: 0,
+        costMorale: 15,
+        successRate: 0.85,
+        successOutcome: {
+          money: 100,
+          resources: 0,
+          morale: 20,
+          factions: {
+            villagers: 2,
+            politicians: 2,
+            government: 0,
+            companies: 1,
+            conservationists: 1
+          },
+          message: "สร้างพันธมิตรที่เหนียวแน่นในพื้นที่"
+        },
+        failOutcome: {
+          money: -150,
+          resources: 0,
+          morale: -10,
+          factions: {
+            villagers: -1,
+            politicians: -1,
+            government: 0,
+            companies: -1,
+            conservationists: 0
+          },
+          message: "งานเลี้ยงล้มเหลวและถูกมองว่าสิ้นเปลือง"
+        }
+      },
+      {
+        label: "รับเงินและเซ็นสัญญาในที่ลับ",
+        type: "UNDERGROUND",
+        costMoney: 0,
+        costResources: 0,
+        costMorale: 25,
+        successRate: 0.7,
+        successOutcome: {
+          money: 500,
+          resources: 200,
+          morale: -15,
+          factions: {
+            villagers: -1,
+            politicians: 3,
+            government: -1,
+            companies: 3,
+            conservationists: -1
+          },
+          message: "เงินทุนไหลมาเทมาแต่งานคุณภาพต่ำลง"
+        },
+        failOutcome: {
+          money: -200,
+          resources: -200,
+          morale: -30,
+          factions: {
+            villagers: -2,
+            politicians: -3,
+            government: -3,
+            companies: -2,
+            conservationists: 0
+          },
+          message: "ถูกตรวจสอบการทุจริตจนเสียชื่อเสียงมหาศาล"
+        }
+      },
+      {
+        label: "ปฏิเสธข้อเสนออย่างรุนแรง",
+        type: "AGGRESSIVE",
+        costMoney: 0,
+        costResources: 0,
+        costMorale: 10,
+        successRate: 0.6,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 15,
+          factions: {
+            villagers: 1,
+            politicians: -3,
+            government: 0,
+            companies: -2,
+            conservationists: 2
+          },
+          message: "รักษาเกียรติยศไว้ได้แต่ขาดทุนสนับสนุน"
+        },
+        failOutcome: {
+          money: -200,
+          resources: 0,
+          morale: -15,
+          factions: {
+            villagers: -1,
+            politicians: -3,
+            government: -2,
+            companies: -2,
+            conservationists: 0
+          },
+          message: "ถูกกลั่นแกล้งจากผู้มีอิทธิพลจนงานสะดุด"
+        }
+      }
+    ],
+    isIntroduction: false,
+    involvedCharNames: [],
+    involvedFactions: [
+      "politicians",
+      "companies"
+    ]
+  },
+  {
+    id: "25",
+    eventType: "Random Event",
+    location: "ภูเขา",
+    title: "พบต้นไม้ศักดิ์สิทธิ์ขวางทาง",
+    description: "ชาวบ้านอ้างว่าต้นตะเคียนยักษ์ในเขตพื้นที่ก่อสร้างเป็นสิ่งศักดิ์สิทธิ์และห้ามตัดขาด",
+    options: [
+      {
+        label: "เชิญผู้เชี่ยวชาญจากป่าไม้มาตรวจสอบ",
+        type: "OFFICIAL",
+        costMoney: 100,
+        costResources: 0,
+        costMorale: 5,
+        successRate: 0.75,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 5,
+          factions: {
+            villagers: 1,
+            politicians: 0,
+            government: 2,
+            companies: 0,
+            conservationists: 2
+          },
+          message: "ได้ทางออกที่เหมาะสมในการอนุรักษ์"
+        },
+        failOutcome: {
+          money: -100,
+          resources: -50,
+          morale: -10,
+          factions: {
+            villagers: -1,
+            politicians: 0,
+            government: -1,
+            companies: -1,
+            conservationists: -1
+          },
+          message: "ความล่าช้าทำให้เสียแผนงาน"
+        }
+      },
+      {
+        label: "จัดพิธีบวงสรวงและเชิญไปปลูกที่วัด",
+        type: "DIPLOMATIC",
+        costMoney: 200,
+        costResources: 0,
+        costMorale: 10,
+        successRate: 0.9,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 30,
+          factions: {
+            villagers: 3,
+            politicians: 1,
+            government: 0,
+            companies: 0,
+            conservationists: 1
+          },
+          message: "ชาวบ้านชื่นชมและร่วมใจช่วยงานต่อ"
+        },
+        failOutcome: {
+          money: -150,
+          resources: 0,
+          morale: -15,
+          factions: {
+            villagers: -2,
+            politicians: 0,
+            government: 0,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "พิธีกรรมผิดพลาดจนชาวบ้านหวาดกลัว"
+        }
+      },
+      {
+        label: "จ้างมือมืดมาลอบวางไฟเผาต้นไม้",
+        type: "UNDERGROUND",
+        costMoney: 150,
+        costResources: 0,
+        costMorale: 25,
+        successRate: 0.5,
+        successOutcome: {
+          money: 0,
+          resources: 100,
+          morale: -20,
+          factions: {
+            villagers: -2,
+            politicians: 0,
+            government: 0,
+            companies: 2,
+            conservationists: -3
+          },
+          message: "ต้นไม้หายไปแต่งานเดินหน้าได้สะดวก"
+        },
+        failOutcome: {
+          money: -300,
+          resources: 0,
+          morale: -30,
+          factions: {
+            villagers: -3,
+            politicians: -1,
+            government: -1,
+            companies: -1,
+            conservationists: -3
+          },
+          message: "ความลับแตกและถูกสาปแช่งจากทั่วสารทิศ"
+        }
+      },
+      {
+        label: "สั่งโค่นทิ้งทันทีด้วยเครื่องจักรหนัก",
+        type: "AGGRESSIVE",
+        costMoney: 0,
+        costResources: 100,
+        costMorale: 25,
+        successRate: 0.8,
+        successOutcome: {
+          money: 0,
+          resources: 200,
+          morale: -20,
+          factions: {
+            villagers: -3,
+            politicians: 0,
+            government: -1,
+            companies: 1,
+            conservationists: -2
+          },
+          message: "เคลียร์พื้นที่เสร็จสิ้นในเวลาไม่กี่ชั่วโมง"
+        },
+        failOutcome: {
+          money: -150,
+          resources: -100,
+          morale: -30,
+          factions: {
+            villagers: -3,
+            politicians: -2,
+            government: -2,
+            companies: -1,
+            conservationists: -3
+          },
+          message: "เกิดอุบัติเหตุแปลกประหลาดกับเครื่องจักร"
+        }
+      }
+    ],
+    isIntroduction: false,
+    involvedCharNames: [],
+    involvedFactions: [
+      "villagers",
+      "conservationists"
+    ]
+  },
+  {
+    id: "26",
+    eventType: "Random Event",
+    location: "ภูเขา",
+    title: "ความล่าช้าของรายงาน EIA",
+    description: "รายงานผลกระทบสิ่งแวดล้อมไม่ผ่านการอนุมัติเนื่องจากกังวลเรื่องการไหลเวียนของน้ำในลำธาร",
+    options: [
+      {
+        label: "ปรับปรุงรายงานและทำตามคำแนะนำรัฐ",
+        type: "OFFICIAL",
+        costMoney: 300,
+        costResources: 0,
+        costMorale: 5,
+        successRate: 0.85,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 5,
+          factions: {
+            villagers: 1,
+            politicians: 1,
+            government: 3,
+            companies: 0,
+            conservationists: 2
+          },
+          message: "รายงานผ่านการรับรองและมีความน่าเชื่อถือสูง"
+        },
+        failOutcome: {
+          money: -200,
+          resources: 0,
+          morale: -10,
+          factions: {
+            villagers: 0,
+            politicians: -1,
+            government: -1,
+            companies: -2,
+            conservationists: 0
+          },
+          message: "การปรับปรุงล่าช้าจนเกินกำหนดการ"
+        }
+      },
+      {
+        label: "จ้างทีมที่ปรึกษาจากมหาวิทยาลัยชั้นนำ",
+        type: "DIPLOMATIC",
+        costMoney: 400,
+        costResources: 0,
+        costMorale: 0,
+        successRate: 0.75,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 15,
+          factions: {
+            villagers: 1,
+            politicians: 0,
+            government: 1,
+            companies: 0,
+            conservationists: 3
+          },
+          message: "งานวิจัยทางวิชาการช่วยลดความกังวลของทุกฝ่าย"
+        },
+        failOutcome: {
+          money: -300,
+          resources: 0,
+          morale: -5,
+          factions: {
+            villagers: 0,
+            politicians: 0,
+            government: 0,
+            companies: -1,
+            conservationists: -1
+          },
+          message: "ค่าจ้างสูงแต่ผลลัพธ์กลับไม่ชัดเจน"
+        }
+      },
+      {
+        label: "ติดสินบนเจ้าหน้าที่พิจารณารายงาน",
+        type: "UNDERGROUND",
+        costMoney: 500,
+        costResources: 0,
+        costMorale: 20,
+        successRate: 0.65,
+        successOutcome: {
+          money: 0,
+          resources: 100,
+          morale: -10,
+          factions: {
+            villagers: -1,
+            politicians: 2,
+            government: 1,
+            companies: 2,
+            conservationists: -2
+          },
+          message: "รายงานผ่านอย่างรวดเร็วโดยไม่ต้องแก้ไขงาน"
+        },
+        failOutcome: {
+          money: -500,
+          resources: -100,
+          morale: -30,
+          factions: {
+            villagers: -2,
+            politicians: -3,
+            government: -3,
+            companies: -2,
+            conservationists: -2
+          },
+          message: "ถูกป.ป.ช. ตรวจสอบและโครงการถูกระงับ"
+        }
+      },
+      {
+        label: "เดินหน้าก่อสร้างก่อนได้รับอนุมัติ",
+        type: "AGGRESSIVE",
+        costMoney: 0,
+        costResources: 300,
+        costMorale: 15,
+        successRate: 0.4,
+        successOutcome: {
+          money: 200,
+          resources: 400,
+          morale: -15,
+          factions: {
+            villagers: -1,
+            politicians: 1,
+            government: -3,
+            companies: 3,
+            conservationists: -3
+          },
+          message: "งานก้าวหน้าไปมากก่อนจะถูกตรวจพบ"
+        },
+        failOutcome: {
+          money: -400,
+          resources: -200,
+          morale: -30,
+          factions: {
+            villagers: -2,
+            politicians: -2,
+            government: -3,
+            companies: -1,
+            conservationists: -3
+          },
+          message: "ถูกรัฐสั่งปิดไซด์งานถาวรและดำเนินคดี"
+        }
+      }
+    ],
+    isIntroduction: false,
+    involvedCharNames: [],
+    involvedFactions: [
+      "government",
+      "conservationists"
+    ]
+  },
+  {
+    id: "27",
+    eventType: "Random Event",
+    location: "ภูเขา",
+    title: "สวัสดิการคนงานพื้นเมือง",
+    description: "คนงานที่จ้างจากหมู่บ้านในพื้นที่เรียกร้องสวัสดิการและค่าแรงที่สูงขึ้นตามความเสี่ยงบนภูเขา",
+    options: [
+      {
+        label: "ปรับฐานค่าแรงให้เป็นไปตามกฎหมาย",
+        type: "OFFICIAL",
+        costMoney: 250,
+        costResources: 0,
+        costMorale: 0,
+        successRate: 0.9,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 15,
+          factions: {
+            villagers: 2,
+            politicians: 1,
+            government: 2,
+            companies: -1,
+            conservationists: 0
+          },
+          message: "คนงานพอใจและทำงานอย่างซื่อสัตย์"
+        },
+        failOutcome: {
+          money: -150,
+          resources: 0,
+          morale: -5,
+          factions: {
+            villagers: 0,
+            politicians: 0,
+            government: 0,
+            companies: -2,
+            conservationists: 0
+          },
+          message: "บริษัทพันธมิตรไม่พอใจที่ค่าแรงสูงขึ้น"
+        }
+      },
+      {
+        label: "มอบอุปกรณ์นิรภัยและประกันกลุ่มให้",
+        type: "DIPLOMATIC",
+        costMoney: 200,
+        costResources: 100,
+        costMorale: 5,
+        successRate: 0.85,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 25,
+          factions: {
+            villagers: 3,
+            politicians: 1,
+            government: 1,
+            companies: 0,
+            conservationists: 1
+          },
+          message: "ได้รับความจงรักภักดีจากคนงานอย่างสูง"
+        },
+        failOutcome: {
+          money: -200,
+          resources: -50,
+          morale: -10,
+          factions: {
+            villagers: -1,
+            politicians: 0,
+            government: 0,
+            companies: -1,
+            conservationists: 0
+          },
+          message: "อุปกรณ์ไม่ได้มาตรฐานทำให้คนงานประท้วงต่อ"
+        }
+      },
+      {
+        label: "จ้างแรงงานผิดกฎหมายมาทดแทน",
+        type: "UNDERGROUND",
+        costMoney: 50,
+        costResources: 0,
+        costMorale: 25,
+        successRate: 0.6,
+        successOutcome: {
+          money: 300,
+          resources: 200,
+          morale: -20,
+          factions: {
+            villagers: -3,
+            politicians: 1,
+            government: -2,
+            companies: 2,
+            conservationists: 0
+          },
+          message: "ลดต้นทุนได้มหาศาลและงานเดินต่อ"
+        },
+        failOutcome: {
+          money: -400,
+          resources: -100,
+          morale: -30,
+          factions: {
+            villagers: -3,
+            politicians: -2,
+            government: -3,
+            companies: -1,
+            conservationists: 0
+          },
+          message: "ถูกบุกจับแรงงานต่างด้าวและโดนค่าปรับหนัก"
+        }
+      },
+      {
+        label: "ไล่แกนนำประท้วงออกและกดดันที่เหลือ",
+        type: "AGGRESSIVE",
+        costMoney: 0,
+        costResources: 0,
+        costMorale: 30,
+        successRate: 0.55,
+        successOutcome: {
+          money: 100,
+          resources: 0,
+          morale: -25,
+          factions: {
+            villagers: -3,
+            politicians: -1,
+            government: -1,
+            companies: 2,
+            conservationists: 0
+          },
+          message: "การประท้วงยุติลงด้วยความกลัว"
+        },
+        failOutcome: {
+          money: -200,
+          resources: -200,
+          morale: -30,
+          factions: {
+            villagers: -3,
+            politicians: -2,
+            government: -2,
+            companies: -2,
+            conservationists: 0
+          },
+          message: "คนงานทั้งหมดนัดหยุดงานประท้วงครั้งใหญ่"
+        }
+      }
+    ],
+    isIntroduction: false,
+    involvedCharNames: [],
+    involvedFactions: [
+      "villagers",
+      "companies"
+    ]
+  },
+  {
+    id: "28",
+    eventType: "Random Event",
+    location: "ภูเขา",
+    title: "เส้นทางข้ามสัตว์ป่า",
+    description: "กลุ่มอนุรักษ์เรียกร้องให้สร้างอุโมงค์หรือสะพานข้ามเพื่อให้สัตว์ป่าเดินข้ามถนนได้อย่างปลอดภัย",
+    options: [
+      {
+        label: "เสนอแผนก่อสร้างสะพานเชื่อมต่อป่า",
+        type: "OFFICIAL",
+        costMoney: 400,
+        costResources: 200,
+        costMorale: 0,
+        successRate: 0.8,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 10,
+          factions: {
+            villagers: 1,
+            politicians: 1,
+            government: 2,
+            companies: -1,
+            conservationists: 3
+          },
+          message: "ได้รับการยกย่องว่าเป็นโครงการสีเขียว"
+        },
+        failOutcome: {
+          money: -200,
+          resources: -100,
+          morale: -10,
+          factions: {
+            villagers: 0,
+            politicians: 0,
+            government: -1,
+            companies: -1,
+            conservationists: -1
+          },
+          message: "การก่อสร้างยุ่งยากและงบบานปลาย"
+        }
+      },
+      {
+        label: "จัดแคมเปญระดมทุนจากภาคเอกชน",
+        type: "DIPLOMATIC",
+        costMoney: 100,
+        costResources: 0,
+        costMorale: 15,
+        successRate: 0.7,
+        successOutcome: {
+          money: 200,
+          resources: 100,
+          morale: 20,
+          factions: {
+            villagers: 1,
+            politicians: 2,
+            government: 1,
+            companies: 2,
+            conservationists: 3
+          },
+          message: "ได้ภาพลักษณ์ที่ดีและพันธมิตรใหม่"
+        },
+        failOutcome: {
+          money: -100,
+          resources: 0,
+          morale: -5,
+          factions: {
+            villagers: 0,
+            politicians: 0,
+            government: 0,
+            companies: -1,
+            conservationists: -2
+          },
+          message: "ไม่สามารถระดมทุนได้เพียงพอ"
+        }
+      },
+      {
+        label: "หลอกลวงตัวเลขสถิติสัตว์ป่าในพื้นที่",
+        type: "UNDERGROUND",
+        costMoney: 150,
+        costResources: 0,
+        costMorale: 10,
+        successRate: 0.6,
+        successOutcome: {
+          money: 300,
+          resources: 0,
+          morale: -10,
+          factions: {
+            villagers: 0,
+            politicians: 1,
+            government: 1,
+            companies: 2,
+            conservationists: -3
+          },
+          message: "ไม่ต้องเสียค่าก่อสร้างสะพานสัตว์ป่า"
+        },
+        failOutcome: {
+          money: -300,
+          resources: 0,
+          morale: -25,
+          factions: {
+            villagers: -1,
+            politicians: -2,
+            government: -2,
+            companies: -1,
+            conservationists: -3
+          },
+          message: "ความจริงเปิดเผยและถูกโซเชียลถล่มหนัก"
+        }
+      },
+      {
+        label: "ติดตั้งรั้วกั้นไฟฟ้าป้องกันสัตว์",
+        type: "AGGRESSIVE",
+        costMoney: 100,
+        costResources: 150,
+        costMorale: 20,
+        successRate: 0.75,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: -15,
+          factions: {
+            villagers: -2,
+            politicians: 0,
+            government: -1,
+            companies: 1,
+            conservationists: -3
+          },
+          message: "ป้องกันสัตว์ได้ดีแต่ดูโหดร้ายเกินไป"
+        },
+        failOutcome: {
+          money: -150,
+          resources: -100,
+          morale: -25,
+          factions: {
+            villagers: -2,
+            politicians: -1,
+            government: -1,
+            companies: 0,
+            conservationists: -3
+          },
+          message: "รั้วไฟฟ้าขัดข้องจนเกิดไฟป่าขึ้น"
+        }
+      }
+    ],
+    isIntroduction: false,
+    involvedCharNames: [],
+    involvedFactions: [
+      "conservationists"
+    ]
+  },
+  {
+    id: "29",
+    eventType: "Random Event",
+    location: "ภูเขา",
+    title: "เครื่องจักรหายสาบสูญ",
+    description: "อะไหล่ราคาแพงและน้ำมันในแคมป์คนงานกลางป่าหายไปอย่างไร้ร่องรอยในตอนกลางคืน",
+    options: [
+      {
+        label: "แจ้งความและเรียกเจ้าหน้าที่มาตรวจ",
+        type: "OFFICIAL",
+        costMoney: 50,
+        costResources: 0,
+        costMorale: 5,
+        successRate: 0.8,
+        successOutcome: {
+          money: 0,
+          resources: 50,
+          morale: 10,
+          factions: {
+            villagers: 1,
+            politicians: 1,
+            government: 3,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "จับคนร้ายได้และได้ของกลางคืนส่วนหนึ่ง"
+        },
+        failOutcome: {
+          money: -100,
+          resources: -100,
+          morale: -10,
+          factions: {
+            villagers: 0,
+            politicians: -1,
+            government: -1,
+            companies: -1,
+            conservationists: 0
+          },
+          message: "ไม่พบเบาะแสและงานล่าช้าไปมาก"
+        }
+      },
+      {
+        label: "จัดเวรยามร่วมกับอาสาสมัครในพื้นที่",
+        type: "DIPLOMATIC",
+        costMoney: 100,
+        costResources: 0,
+        costMorale: 15,
+        successRate: 0.85,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 25,
+          factions: {
+            villagers: 3,
+            politicians: 1,
+            government: 0,
+            companies: 1,
+            conservationists: 0
+          },
+          message: "ความสัมพันธ์กับชุมชนดีขึ้นและความปลอดภัยดีเยี่ยม"
+        },
+        failOutcome: {
+          money: -150,
+          resources: -50,
+          morale: -5,
+          factions: {
+            villagers: -1,
+            politicians: 0,
+            government: 0,
+            companies: -1,
+            conservationists: 0
+          },
+          message: "เวรยามไม่เพียงพอและของยังคงหายต่อเนื่อง"
+        }
+      },
+      {
+        label: "จ้างกลุ่มผู้มีอิทธิพลท้องถิ่นมาคุ้มครอง",
+        type: "UNDERGROUND",
+        costMoney: 200,
+        costResources: 0,
+        costMorale: 15,
+        successRate: 0.9,
+        successOutcome: {
+          money: 0,
+          resources: 200,
+          morale: -10,
+          factions: {
+            villagers: -2,
+            politicians: 2,
+            government: -1,
+            companies: 2,
+            conservationists: 0
+          },
+          message: "ของหายหยุดลงทันทีด้วยบารมีผู้มีอิทธิพล"
+        },
+        failOutcome: {
+          money: -400,
+          resources: 0,
+          morale: -20,
+          factions: {
+            villagers: -2,
+            politicians: -1,
+            government: -2,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "ถูกเรียกค่าคุ้มครองเพิ่มจนแทบไม่เหลือทุน"
+        }
+      },
+      {
+        label: "ติดตั้งกล้องวงจรปิดและกับดักรุนแรง",
+        type: "AGGRESSIVE",
+        costMoney: 150,
+        costResources: 50,
+        costMorale: 10,
+        successRate: 0.7,
+        successOutcome: {
+          money: 0,
+          resources: 100,
+          morale: -5,
+          factions: {
+            villagers: -2,
+            politicians: 0,
+            government: 0,
+            companies: 1,
+            conservationists: 0
+          },
+          message: "ขโมยเข็ดหลาบแต่ชาวบ้านหวาดระแวง"
+        },
+        failOutcome: {
+          money: -200,
+          resources: -50,
+          morale: -20,
+          factions: {
+            villagers: -3,
+            politicians: -1,
+            government: -1,
+            companies: -1,
+            conservationists: -1
+          },
+          message: "กับดักทำให้ชาวบ้านที่ไม่เกี่ยวข้องบาดเจ็บ"
+        }
+      }
+    ],
+    isIntroduction: false,
+    involvedCharNames: [],
+    involvedFactions: [
+      "villagers",
+      "companies"
+    ]
+  },
+  {
+    id: "30",
+    eventType: "Random Event",
+    location: "ภูเขา",
+    title: "การผลักดันโครงการแหล่งท่องเที่ยว",
+    description: "นักการเมืองท้องถิ่นต้องการให้คุณปรับปรุงถนนให้ผ่านจุดชมวิวเพื่อประโยชน์ทางการท่องเที่ยว",
+    options: [
+      {
+        label: "ทำเรื่องขอแก้ไขสัญญาจ้างเป็นกรณีพิเศษ",
+        type: "OFFICIAL",
+        costMoney: 300,
+        costResources: 100,
+        costMorale: 0,
+        successRate: 0.8,
+        successOutcome: {
+          money: 200,
+          resources: 0,
+          morale: 10,
+          factions: {
+            villagers: 1,
+            politicians: 3,
+            government: 2,
+            companies: 1,
+            conservationists: 0
+          },
+          message: "โครงการขยายผลและได้งบประมาณเพิ่ม"
+        },
+        failOutcome: {
+          money: -200,
+          resources: -50,
+          morale: -5,
+          factions: {
+            villagers: 0,
+            politicians: -2,
+            government: -1,
+            companies: -1,
+            conservationists: 0
+          },
+          message: "การแก้สัญญาถูกปฏิเสธและทำให้เสียเวลา"
+        }
+      },
+      {
+        label: "จัดการประชุมร่วมกับชาวบ้านและกลุ่มอนุรักษ์",
+        type: "DIPLOMATIC",
+        costMoney: 150,
+        costResources: 0,
+        costMorale: 10,
+        successRate: 0.85,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 25,
+          factions: {
+            villagers: 3,
+            politicians: 1,
+            government: 1,
+            companies: 0,
+            conservationists: 2
+          },
+          message: "เกิดข้อตกลงที่สร้างประโยชน์ให้ทุกฝ่าย"
+        },
+        failOutcome: {
+          money: -100,
+          resources: 0,
+          morale: -10,
+          factions: {
+            villagers: -1,
+            politicians: -1,
+            government: 0,
+            companies: 0,
+            conservationists: -1
+          },
+          message: "ที่ประชุมตกลงกันไม่ได้และเกิดความขัดแย้ง"
+        }
+      },
+      {
+        label: "แอบขยับแนวถนนโดยไม่แจ้งหน่วยงานกลาง",
+        type: "UNDERGROUND",
+        costMoney: 100,
+        costResources: 50,
+        costMorale: 15,
+        successRate: 0.6,
+        successOutcome: {
+          money: 400,
+          resources: 0,
+          morale: -10,
+          factions: {
+            villagers: 1,
+            politicians: 3,
+            government: -2,
+            companies: 2,
+            conservationists: -2
+          },
+          message: "ได้ใจนักการเมืองและธุรกิจท้องถิ่น"
+        },
+        failOutcome: {
+          money: -400,
+          resources: -200,
+          morale: -25,
+          factions: {
+            villagers: -1,
+            politicians: -2,
+            government: -3,
+            companies: -1,
+            conservationists: -2
+          },
+          message: "ถูกตรวจสอบพบว่าผิดแบบและต้องทุบทำใหม่"
+        }
+      },
+      {
+        label: "ปฏิเสธและมุ่งเน้นงานเดิมให้เสร็จ",
+        type: "AGGRESSIVE",
+        costMoney: 0,
+        costResources: 0,
+        costMorale: 10,
+        successRate: 0.75,
+        successOutcome: {
+          money: 0,
+          resources: 200,
+          morale: 10,
+          factions: {
+            villagers: -1,
+            politicians: -3,
+            government: 1,
+            companies: -1,
+            conservationists: 2
+          },
+          message: "งานเสร็จตามกำหนดแต่ศัตรูทางการเมืองเพิ่มขึ้น"
+        },
+        failOutcome: {
+          money: -150,
+          resources: 0,
+          morale: -15,
+          factions: {
+            villagers: -2,
+            politicians: -3,
+            government: -1,
+            companies: -2,
+            conservationists: 0
+          },
+          message: "ถูกตัดงบประมาณส่วนอื่นเป็นการตอบโต้"
+        }
+      }
+    ],
+    isIntroduction: false,
+    involvedCharNames: [],
+    involvedFactions: [
+      "conservationists",
+      "politicians"
+    ]
   }
 ]
