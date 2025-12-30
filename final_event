@@ -6790,5 +6790,760 @@
       "villagers",
       "politicians"
     ]
+  },
+  {
+    id: "46",
+    eventType: "Random Event",
+    location: "แหล่งชุมชน",
+    title: "เจ้าที่แรงหรือแค่แป้งฝุ่น?",
+    description: "คนงานขุดไปเจอจอมปลวกขนาดมหึมาใต้พื้นถนน ชาวบ้านแห่กันมาเอาผ้าสามสีมาผูกแล้วจุดธูปขอหวยจนรถแม็คโครทำงานไม่ได้",
+    options: [
+      {
+        label: "ประสานงานกรมศิลปากรมาตรวจสอบ",
+        type: "OFFICIAL",
+        costMoney: 200,
+        costResources: 100,
+        costMorale: 10,
+        successRate: 0.7,
+        successOutcome: {
+          money: 50,
+          resources: 0,
+          morale: 5,
+          factions: {
+            villagers: 1,
+            politicians: 1,
+            government: 2,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "ทางการระบุว่าเป็นแค่ดินพูนปกติ ชาวบ้านยอมให้ขุดต่อด้วยความเสียดาย"
+        },
+        failOutcome: {
+          money: -100,
+          resources: -50,
+          morale: -15,
+          factions: {
+            villagers: -2,
+            politicians: -1,
+            government: 0,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "ชาวบ้านหาว่าคุณลบหลู่ ประท้วงจนงานหยุดชะงักไปสามวัน"
+        }
+      },
+      {
+        label: "จัดพิธีบวงสรวงชุดใหญ่ไฟกระพริบ",
+        type: "DIPLOMATIC",
+        costMoney: 400,
+        costResources: 50,
+        costMorale: 0,
+        successRate: 0.9,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 25,
+          factions: {
+            villagers: 3,
+            politicians: 0,
+            government: 0,
+            companies: 0,
+            conservationists: 1
+          },
+          message: "เจ้าแม่ (ในใจชาวบ้าน) พอใจมาก ทุกคนช่วยกันย้ายจอมปลวกไปไว้ในวัดอย่างสันติ"
+        },
+        failOutcome: {
+          money: -200,
+          resources: -20,
+          morale: -5,
+          factions: {
+            villagers: 1,
+            politicians: 0,
+            government: -1,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "ระหว่างพิธี ฝนดันตกหนัก ธูปดับ ชาวบ้านมองว่าเป็นลางร้ายหนักกว่าเดิม"
+        }
+      },
+      {
+        label: "แอบจ้างสัปเหร่อมาขุดตอนตีสอง",
+        type: "UNDERGROUND",
+        costMoney: 150,
+        costResources: 50,
+        costMorale: -10,
+        successRate: 0.5,
+        successOutcome: {
+          money: 100,
+          resources: 200,
+          morale: -5,
+          factions: {
+            villagers: 0,
+            politicians: 1,
+            government: 0,
+            companies: 2,
+            conservationists: -1
+          },
+          message: "ตื่นเช้ามาจอมปลวกหายไปอย่างไร้ร่องรอย งานเดินหน้าต่อแบบงงๆ"
+        },
+        failOutcome: {
+          money: -300,
+          resources: -100,
+          morale: -25,
+          factions: {
+            villagers: -3,
+            politicians: -2,
+            government: -1,
+            companies: 0,
+            conservationists: -2
+          },
+          message: "คลิปหลุดตอนคนงานแอบขุดว่อนเน็ต คุณโดนรุมประชาทัณฑ์ในโซเชียล"
+        }
+      },
+      {
+        label: "สั่งแม็คโครตะลุยรื้อทันที",
+        type: "AGGRESSIVE",
+        costMoney: 0,
+        costResources: 200,
+        costMorale: -20,
+        successRate: 0.6,
+        successOutcome: {
+          money: 0,
+          resources: 300,
+          morale: -10,
+          factions: {
+            villagers: -2,
+            politicians: 0,
+            government: 1,
+            companies: 1,
+            conservationists: -2
+          },
+          message: "รื้อเสร็จใน 5 นาที แต่วันต่อมาคนขับแม็คโครลาออกเพราะฝันร้าย"
+        },
+        failOutcome: {
+          money: -400,
+          resources: -300,
+          morale: -30,
+          factions: {
+            villagers: -3,
+            politicians: -1,
+            government: -2,
+            companies: -1,
+            conservationists: -3
+          },
+          message: "รถแม็คโครสายพานขาดกลางคัน ชาวบ้านตะโกนสะใจว่าโดนดีเข้าให้แล้ว"
+        }
+      }
+    ],
+    isIntroduction: false,
+    involvedCharNames: [],
+    involvedFactions: [
+      "villagers",
+      "conservationists"
+    ]
+  },
+  {
+    id: "47",
+    eventType: "Random Event",
+    location: "แหล่งชุมชน",
+    title: "มหกรรมส้มตำต้านฝุ่น",
+    description: "แม่ค้าส้มตำจัดตั้งแผงลอยขายคนงานริมเขตก่อสร้าง ควันไก่ย่างโขมงจนชาวบ้านแถวนั้นมองไม่เห็นทางเดินรถ",
+    options: [
+      {
+        label: "แจ้งเทศกิจมาดำเนินการตามกฎหมาย",
+        type: "OFFICIAL",
+        costMoney: 50,
+        costResources: 0,
+        costMorale: -5,
+        successRate: 0.8,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 5,
+          factions: {
+            villagers: 1,
+            politicians: 1,
+            government: 2,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "พื้นที่สะอาดสะอ้าน ชาวบ้านปรบมือให้ความระเบียบเรียบร้อย"
+        },
+        failOutcome: {
+          money: -100,
+          resources: 0,
+          morale: -10,
+          factions: {
+            villagers: -2,
+            politicians: -1,
+            government: 0,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "แม่ค้ารวมตัวประท้วง ด่าทอคนงานจนเสียขวัญไปทั้งไซต์"
+        }
+      },
+      {
+        label: "จัดโซน Food Court ชั่วคราวให้",
+        type: "DIPLOMATIC",
+        costMoney: 300,
+        costResources: 200,
+        costMorale: 20,
+        successRate: 0.9,
+        successOutcome: {
+          money: -50,
+          resources: 0,
+          morale: 30,
+          factions: {
+            villagers: 2,
+            politicians: 1,
+            government: 1,
+            companies: 1,
+            conservationists: 0
+          },
+          message: "แม่ค้าดีใจ ลดราคาค่าส้มตำให้คนงานครึ่งราคา วิน-วินทุกฝ่าย"
+        },
+        failOutcome: {
+          money: -400,
+          resources: -100,
+          morale: 5,
+          factions: {
+            villagers: 0,
+            politicians: 0,
+            government: -1,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "แย่งทำเลกันจนเกิดศึกตบตีกลาง Food Court งานต้องหยุดมาห้ามทัพ"
+        }
+      },
+      {
+        label: "เก็บค่าที่แบบลับๆ แลกกับค่าน้ำร้อนน้ำชา",
+        type: "UNDERGROUND",
+        costMoney: 0,
+        costResources: 0,
+        costMorale: -15,
+        successRate: 0.7,
+        successOutcome: {
+          money: 500,
+          resources: 0,
+          morale: -10,
+          factions: {
+            villagers: -1,
+            politicians: 2,
+            government: -1,
+            companies: 1,
+            conservationists: 0
+          },
+          message: "ได้กำไรเข้ากระเป๋าเพิ่ม แม่ค้าแฮปปี้ คนงานได้กินของอร่อยใกล้ๆ"
+        },
+        failOutcome: {
+          money: -500,
+          resources: 0,
+          morale: -30,
+          factions: {
+            villagers: -2,
+            politicians: -3,
+            government: -2,
+            companies: -1,
+            conservationists: 0
+          },
+          message: "เรื่องแดงถึงหูนักข่าว คุณถูกสอบสวนเรื่องส่วยส้มตำ"
+        }
+      },
+      {
+        label: "เอาแผงกั้นเหล็กล้อมกรอบปิดทางเข้า",
+        type: "AGGRESSIVE",
+        costMoney: 100,
+        costResources: 300,
+        costMorale: -10,
+        successRate: 0.8,
+        successOutcome: {
+          money: 0,
+          resources: 100,
+          morale: -10,
+          factions: {
+            villagers: -1,
+            politicians: 0,
+            government: 1,
+            companies: 1,
+            conservationists: 0
+          },
+          message: "แม่ค้าย้ายหนีไปเองเพราะไม่มีลูกค้า งานเดินหน้าได้รวดเร็ว"
+        },
+        failOutcome: {
+          money: -200,
+          resources: -200,
+          morale: -25,
+          factions: {
+            villagers: -3,
+            politicians: -2,
+            government: 0,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "แม่ค้าปาถุงน้ำปลาร้าใส่รถโฟร์แมน กลิ่นคละคลุ้งจนไม่มีใครกล้าทำงาน"
+        }
+      }
+    ],
+    isIntroduction: false,
+    involvedCharNames: [],
+    involvedFactions: [
+      "villagers",
+      "companies"
+    ]
+  },
+  {
+    id: "48",
+    eventType: "Random Event",
+    location: "แหล่งชุมชน",
+    title: "แก๊งสี่ขาล่าพ้นถนน",
+    description: "สุนัขจรจัดเจ้าถิ่น 20 ตัว พากันมานอนอาบแดดบนถนนที่เพิ่งเทปูนเสร็จหมาดๆ แถมยังไล่เห่าคนงานที่จะเข้าไปกันพื้นที่",
+    options: [
+      {
+        label: "เรียกหน่วยเทศบาลมาจับไปศูนย์พักพิง",
+        type: "OFFICIAL",
+        costMoney: 200,
+        costResources: 0,
+        costMorale: 0,
+        successRate: 0.7,
+        successOutcome: {
+          money: 0,
+          resources: 100,
+          morale: 5,
+          factions: {
+            villagers: 1,
+            politicians: 1,
+            government: 2,
+            companies: 0,
+            conservationists: -2
+          },
+          message: "ถนนเรียบกริบไม่มีรอยเท้า สุนัขถูกนำไปดูแลในที่ปลอดภัย"
+        },
+        failOutcome: {
+          money: -100,
+          resources: -50,
+          morale: -10,
+          factions: {
+            villagers: -1,
+            politicians: 0,
+            government: 1,
+            companies: 0,
+            conservationists: -3
+          },
+          message: "หมาหนีรอดไปได้ แถมกลับมาฉี่ใส่ล้อรถเครนทุกคืน"
+        }
+      },
+      {
+        label: "จ้างกลุ่มคนรักหมามาช่วยย้ายที่",
+        type: "DIPLOMATIC",
+        costMoney: 300,
+        costResources: 50,
+        costMorale: 20,
+        successRate: 0.9,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 30,
+          factions: {
+            villagers: 2,
+            politicians: 1,
+            government: 0,
+            companies: 0,
+            conservationists: 3
+          },
+          message: "หมาๆ มีความสุข คนงานได้ลูบหัวหมาคลายเครียด งานเดินหน้าต่อ"
+        },
+        failOutcome: {
+          money: -200,
+          resources: -20,
+          morale: -5,
+          factions: {
+            villagers: 0,
+            politicians: 0,
+            government: -1,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "คนรักหมากับชาวบ้านทะเลาะกันเองเรื่องจุดที่วางอาหารใหม่"
+        }
+      },
+      {
+        label: "แอบเอาลูกชิ้นใส่ยานอนหลับมาล่อ",
+        type: "UNDERGROUND",
+        costMoney: 100,
+        costResources: 0,
+        costMorale: -20,
+        successRate: 0.6,
+        successOutcome: {
+          money: 0,
+          resources: 200,
+          morale: -10,
+          factions: {
+            villagers: 0,
+            politicians: 0,
+            government: 0,
+            companies: 2,
+            conservationists: -3
+          },
+          message: "หมาหลับหมด ย้ายไปที่อื่นได้เงียบๆ ไม่มีใครสงสัย"
+        },
+        failOutcome: {
+          money: -400,
+          resources: -100,
+          morale: -30,
+          factions: {
+            villagers: -2,
+            politicians: -1,
+            government: -2,
+            companies: 0,
+            conservationists: -3
+          },
+          message: "หมาดื้อยา ตื่นมาไล่กัดหัวหน้าคนงานจนต้องเข้าโรงพยาบาล"
+        }
+      },
+      {
+        label: "ฉีดน้ำไล่และใช้เสียงดังข่มขู่",
+        type: "AGGRESSIVE",
+        costMoney: 0,
+        costResources: 100,
+        costMorale: -15,
+        successRate: 0.8,
+        successOutcome: {
+          money: 0,
+          resources: 150,
+          morale: -5,
+          factions: {
+            villagers: 1,
+            politicians: 0,
+            government: 1,
+            companies: 1,
+            conservationists: -3
+          },
+          message: "หมาหนีเตลิดไป แต่ภาพลักษณ์บริษัทดูโหดร้ายในสายตาคนรักสัตว์"
+        },
+        failOutcome: {
+          money: -300,
+          resources: -200,
+          morale: -25,
+          factions: {
+            villagers: -2,
+            politicians: -2,
+            government: -1,
+            companies: 0,
+            conservationists: -3
+          },
+          message: "หมาสู้กลับ! กัดสายไฟเครื่องจักรเสียหายไปหลายจุด"
+        }
+      }
+    ],
+    isIntroduction: false,
+    involvedCharNames: [],
+    involvedFactions: [
+      "government",
+      "conservationists"
+    ]
+  },
+  {
+    id: "49",
+    eventType: "Random Event",
+    location: "แหล่งชุมชน",
+    title: "เน็ตไอดอลบุกไซต์งาน",
+    description: "กลุ่มอินฟลูเอนเซอร์ชื่อดังมาถ่าย TikTok เต้นเพลงฮิตบนกองทรายที่เตรียมไว้สร้างถนน ชาวบ้านแห่มามุงจนการจราจรเป็นอัมพาต",
+    options: [
+      {
+        label: "แจ้งตำรวจมาเชิญออกเพื่อความปลอดภัย",
+        type: "OFFICIAL",
+        costMoney: 100,
+        costResources: 0,
+        costMorale: 0,
+        successRate: 0.8,
+        successOutcome: {
+          money: 0,
+          resources: 50,
+          morale: 5,
+          factions: {
+            villagers: 1,
+            politicians: 1,
+            government: 2,
+            companies: 1,
+            conservationists: 0
+          },
+          message: "ตำรวจจัดการได้รวดเร็ว อินฟลูฯ เสียหน้าแต่ชาวบ้านได้ทางคืน"
+        },
+        failOutcome: {
+          money: -50,
+          resources: -50,
+          morale: -10,
+          factions: {
+            villagers: -1,
+            politicians: 0,
+            government: 1,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "อินฟลูฯ ไลฟ์สดว่าโดนรังแก แฟนคลับถล่มเพจบริษัทจนล่ม"
+        }
+      },
+      {
+        label: "ชวนอินฟลูฯ มาถ่ายคลิปโปรโมทโครงการ",
+        type: "DIPLOMATIC",
+        costMoney: 500,
+        costResources: 100,
+        costMorale: 25,
+        successRate: 0.9,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 30,
+          factions: {
+            villagers: 3,
+            politicians: 2,
+            government: 1,
+            companies: 2,
+            conservationists: 1
+          },
+          message: "คลิปไวรัลในทางที่ดี ยอดจองบ้านจัดสรรแถวนั้นพุ่งสูงขึ้น"
+        },
+        failOutcome: {
+          money: -500,
+          resources: -100,
+          morale: -5,
+          factions: {
+            villagers: 1,
+            politicians: -1,
+            government: -1,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "อินฟลูฯ เรียกค่าตัวเพิ่มหน้างาน แถมเต้นจนทรายกระเด็นใส่เครื่องจักร"
+        }
+      },
+      {
+        label: "จ้างหน้าม้ามาเต้นแข่งจนพวกเขาอาย",
+        type: "UNDERGROUND",
+        costMoney: 200,
+        costResources: 0,
+        costMorale: 10,
+        successRate: 0.5,
+        successOutcome: {
+          money: 100,
+          resources: 100,
+          morale: 20,
+          factions: {
+            villagers: 2,
+            politicians: 0,
+            government: 0,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "ลุงคนงานเต้นเก่งกว่าจนเป็นไวรัลแทน อินฟลูฯ ยอมแพ้หนีไป"
+        },
+        failOutcome: {
+          money: -300,
+          resources: -50,
+          morale: -15,
+          factions: {
+            villagers: -1,
+            politicians: 0,
+            government: -1,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "เกิดการปะทะกันของแฟนคลับสองฝ่าย งานต้องหยุดเพื่อเคลียร์พื้นที่"
+        }
+      },
+      {
+        label: "เปิดไซเรนและเดินเครื่องพ่นน้ำไล่ฝุ่น",
+        type: "AGGRESSIVE",
+        costMoney: 0,
+        costResources: 200,
+        costMorale: -15,
+        successRate: 0.7,
+        successOutcome: {
+          money: 0,
+          resources: 150,
+          morale: -10,
+          factions: {
+            villagers: 1,
+            politicians: 0,
+            government: 1,
+            companies: 2,
+            conservationists: 0
+          },
+          message: "อินฟลูฯ วิ่งหนีน้ำกันชุลมุน พื้นที่ว่างเปล่าในพริบตา"
+        },
+        failOutcome: {
+          money: -400,
+          resources: -300,
+          morale: -30,
+          factions: {
+            villagers: -2,
+            politicians: -2,
+            government: -2,
+            companies: -1,
+            conservationists: 0
+          },
+          message: "กล้องราคาแพงของอินฟลูฯ พังเสียหาย คุณโดนฟ้องเรียกค่าเสียหายอ่วม"
+        }
+      }
+    ],
+    isIntroduction: false,
+    involvedCharNames: [],
+    involvedFactions: [
+      "villagers",
+      "politicians"
+    ]
+  },
+  {
+    id: "50",
+    eventType: "Random Event",
+    location: "แหล่งชุมชน",
+    title: "บ่อโคลนมหัศจรรย์",
+    description: "ฝนตกหนักจนหลุมก่อสร้างกลายเป็นบ่อโคลน ชาวบ้านเชื่อว่าเป็นโคลนศักดิ์สิทธิ์ พากันเอามาพอกหน้าโชว์ออกทีวี",
+    options: [
+      {
+        label: "ประสานสถาบันธรณีวิทยามาพิสูจน์",
+        type: "OFFICIAL",
+        costMoney: 150,
+        costResources: 50,
+        costMorale: 5,
+        successRate: 0.8,
+        successOutcome: {
+          money: 0,
+          resources: 100,
+          morale: 5,
+          factions: {
+            villagers: 1,
+            politicians: 1,
+            government: 2,
+            companies: 0,
+            conservationists: 1
+          },
+          message: "ผลพิสูจน์ว่าเป็นแค่ดินเลนธรรมดา ชาวบ้านเลิกสนใจและยอมให้สูบน้ำออก"
+        },
+        failOutcome: {
+          money: -200,
+          resources: -100,
+          morale: -10,
+          factions: {
+            villagers: -1,
+            politicians: 0,
+            government: 1,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "ผลแล็บล่าช้า ชาวบ้านขุดดินจนถนนทรุดตัวเพิ่ม"
+        }
+      },
+      {
+        label: "แจกสบู่และผ้าเช็ดตัวให้ชาวบ้าน",
+        type: "DIPLOMATIC",
+        costMoney: 250,
+        costResources: 0,
+        costMorale: 20,
+        successRate: 0.9,
+        successOutcome: {
+          money: 0,
+          resources: 0,
+          morale: 30,
+          factions: {
+            villagers: 3,
+            politicians: 1,
+            government: 0,
+            companies: 1,
+            conservationists: 0
+          },
+          message: "ชาวบ้านประทับใจในความใส่ใจ ยอมย้ายออกไปอาบน้ำที่บ้านอย่างสงบ"
+        },
+        failOutcome: {
+          money: -300,
+          resources: -20,
+          morale: -5,
+          factions: {
+            villagers: 1,
+            politicians: 0,
+            government: -1,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "ชาวบ้านนึกว่าสนับสนุนให้มาเล่นน้ำเพิ่ม คนแห่มากันทั้งตำบล"
+        }
+      },
+      {
+        label: "แอบเทน้ำมันเครื่องเก่าลงไปให้เหม็น",
+        type: "UNDERGROUND",
+        costMoney: 50,
+        costResources: 50,
+        costMorale: -25,
+        successRate: 0.4,
+        successOutcome: {
+          money: 200,
+          resources: 200,
+          morale: -10,
+          factions: {
+            villagers: -1,
+            politicians: 1,
+            government: 0,
+            companies: 2,
+            conservationists: -3
+          },
+          message: "กลิ่นเหม็นจนไม่มีใครกล้าเข้าใกล้ งานเดินหน้าต่อได้ทันที"
+        },
+        failOutcome: {
+          money: -500,
+          resources: -200,
+          morale: -30,
+          factions: {
+            villagers: -3,
+            politicians: -2,
+            government: -3,
+            companies: -1,
+            conservationists: -3
+          },
+          message: "คุณโดนฟ้องข้อหาทำลายสิ่งแวดล้อมและทำให้ชาวบ้านผิวหนังอักเสบ"
+        }
+      },
+      {
+        label: "สั่งรถถมดินปิดหลุมทันที",
+        type: "AGGRESSIVE",
+        costMoney: 50,
+        costResources: 400,
+        costMorale: -20,
+        successRate: 0.7,
+        successOutcome: {
+          money: 0,
+          resources: 300,
+          morale: -15,
+          factions: {
+            villagers: -2,
+            politicians: 1,
+            government: 1,
+            companies: 1,
+            conservationists: 0
+          },
+          message: "หลุมหายไปในพริบตา ชาวบ้านกระโดดหนีแทบไม่ทัน"
+        },
+        failOutcome: {
+          money: -400,
+          resources: -400,
+          morale: -30,
+          factions: {
+            villagers: -3,
+            politicians: -2,
+            government: -1,
+            companies: 0,
+            conservationists: 0
+          },
+          message: "ดินที่ถมไหลไปทับบ้านเรือนข้างๆ โดนเรียกค่าเสียหายยับเยิน"
+        }
+      }
+    ],
+    isIntroduction: false,
+    involvedCharNames: [],
+    involvedFactions: [
+      "villagers",
+      "government"
+    ]
   }
 ]
